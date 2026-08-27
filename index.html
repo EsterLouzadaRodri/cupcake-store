@@ -2,23 +2,26 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Raiz do site ou subdomínio -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CupcakeStore - Delícias em Miniatura</title>
     <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--link fonte google-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header id="cabecalho">
         <!-- Logomarca e Slogan -->
-        <div>
-            <img src="img/cupcakestore-logo.svg" alt="cupcakestore-logo.svg" width="128px">   
+        <div id="marca">
+            <img id="marcaImagem" class="borda-redonda sombra" src="img/cupcakestore-logo.svg" alt="cupcakestore-logo.svg" width="128px">
+            <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
         </div>
-        <h1 id="frase">"Delícias em miniatura que conquistam corações"</h1>
         <!-- Navegação Global -->
-        <nav id="menu">
+        <nav id="navegacaoGlobal" class="fundo-escuro sombra">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sabores.html">Nossos Sabores</a></li>
@@ -28,11 +31,11 @@
     </header>
     <hr>
     <!-- Conteúdo Principal -->
-    <main>
+    <main id="principal" class="conteiner">
         <!-- Título da Página -->
         <h1>CupcakeStore</h1>
-        <nav>
-            <ul id="menudois">
+        <nav id="navegacaoLocal">
+            <ul>
                 <li><a href="#sobre">Sobre a Nossa Loja</a></li>
                 <li><a href="#equipe">Nossa Equipe</a></li>
                 <li><a href="#tamanhos">Nossos Tamanhos</a></li>
@@ -43,7 +46,7 @@
         </nav>
         <!-- Iframe -->
         <section id="video">
-            <iframe width="560" height="315"
+            <iframe class="sombra" width="560" height="315"
                 src="https://www.youtube.com/embed/6ISeH95sN54?si=oLLN1qYZLjZJIH_0&amp;controls=0"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -51,7 +54,7 @@
             </iframe>
         </section>
         <!-- Sobre a Nossa Loja -->
-        <section id="sobre">
+        <section id="sobre" class="secao">
             <h2>Sobre a Nossa Loja</h2>
             <p>Fundada em 2015, a CupcakeStore nasceu do sonho de trazer alegria através de doces miniatura. Nossa
                 missão é criar cupcakes que não apenas satisfaçam o paladar, mas também encantem os olhos.</p>
@@ -60,53 +63,53 @@
                 utilizamos conservantes ou corantes artificiais em nossas receitas.</p>
         </section>
         <!-- Nossa Equipe -->
-        <section id="equipe">
+        <section id="equipe" class="secao">
             <h2>Nossa Equipe</h2>
             <div>
-                <img src="img/equipe-ana-paula.jpg" alt="equipe-ana-paula.jpg" width="280px">
-                <h3>Ana Paula - Chef Confeiteira</h3>
-                <p>Formada em Gastronomia com especialização em Confeitaria, Ana é a mente criativa por trás dos nossos
-                    sabores exclusivos.</p>
-            </div>
-            <div>
-                <img src="img/equipe-carlos-mendes.jpg" alt="equipe-carlos-mendes.jpg" width="280px">
-                <h3>Carlos Mendes - Padeiro Mestre</h3>
-                <p>Com mais de 15 anos de experiência, Carlos garante que todas as nossas massas tenham a textura
-                    perfeita.</p>
-            </div>
-            <div>
-                <img src="img/equipe-juliana-santos.jpg" alt="equipe-juliana-santos.jpg" width="280px">
-                <h3>Juliana Santos - Decoradora</h3>
-                <p>Nossa artista que transforma cupcakes em pequenas obras de arte com suas técnicas incríveis de
-                    decoração.</p>
+                <div class="caixa">
+                    <img class="borda-redonda sombra" src="img/equipe-ana-paula.jpg" alt="equipe-ana-paula.jpg" width="280px">
+                    <h3>Ana Paula - Chef Confeiteira</h3>
+                    <p>Formada em Gastronomia com especialização em Confeitaria, Ana é a mente criativa por trás dos nossos
+                        sabores exclusivos.</p>
+                </div>
+                <div class="caixa">
+                    <img class="borda-redonda sombra" src="img/equipe-carlos-mendes.jpg" alt="equipe-carlos-mendes.jpg" width="280px">
+                    <h3>Carlos Mendes - Padeiro Mestre</h3>
+                    <p>Com mais de 15 anos de experiência, Carlos garante que todas as nossas massas tenham a textura
+                        perfeita.</p>
+                </div>
+                <div class="caixa">
+                    <img class="borda-redonda sombra" src="img/equipe-juliana-santos.jpg" alt="equipe-juliana-santos.jpg" width="280px">
+                    <h3>Juliana Santos - Decoradora</h3>
+                    <p>Nossa artista que transforma cupcakes em pequenas obras de arte com suas técnicas incríveis de
+                        decoração.</p>
+                </div>
             </div>
         </section>
         <!-- Nossos Tamanhos -->
-        <section id="tamanhos">
+        <section id="tamanhos" class="secao">
             <h2>Nossos Tamanhos</h2>
-
             <div>
-                <img src="img/cupcake-mini.png" alt="Cupcake Mini" width="160px">
-                <h3>Mini Cupcake</h3>
-                <p>Diâmetro: 3cm</p>
-                <p>Peso: 40g</p>
-                <p>Ideal para eventos e degustação</p>
-                <p>Embalagem com 6 ou 12 unidades</p>
-                <p>Preço: A partir de R$ 3,50/unidade</p>
-            </div>
-
-            <div>
-                <img src="img/cupcake-mini.png" alt="Cupcake Tradicional" width="160px">
-                <h3>Tradicional Cupcake</h3>
-                <p>Diâmetro: 5cm</p>
-                <p>Peso: 90g</p>
-                <p>Nosso tamanho tradicional</p>
-                <p>Embalagem individual ou kits com 4 ou 6</p>
-                <p>Preço: A partir de R$ 6,90/unidade</p>
+                <div>
+                    <h3 class="texto-claro">Mini Cupcake</h3>
+                    <p>Diâmetro: 3cm</p>
+                    <p>Peso: 40g</p>
+                    <p>Ideal para eventos e degustação</p>
+                    <p>Embalagem com 6 ou 12 unidades</p>
+                    <p>Preço: A partir de R$ 3,50/unidade</p>
+                </div>
+                <div>
+                    <h3 class="texto-claro">Standard Cupcake</h3>
+                    <p>Diâmetro: 5cm</p>
+                    <p>Peso: 90g</p>
+                    <p>Nosso tamanho tradicional</p>
+                    <p>Embalagem individual ou kits com 4 ou 6</p>
+                    <p>Preço: A partir de R$ 6,90/unidade</p>
+                </div>
             </div>
         </section>
         <!-- Como Comprar -->
-        <section id="comprar">
+        <section id="comprar" class="secao">
             <h2>Como Comprar</h2>
             <div>
                 <h3>Escolha seus cupcakes</h3>
@@ -130,41 +133,45 @@
             </div>
         </section>
         <!-- Formas de Pagamento e Entrega -->
-        <section id="pagamento">
+        <section id="pagamento" class="secao">
             <h2>Formas de Pagamento e Entrega</h2>
             <div>
-                <h3>Pagamento</h3>
-                <p>Cartão de crédito (até 12x)</p>
-                <p>Cartão de débito</p>
-                <p>Pix (5% de desconto)</p>
-                <p>Dinheiro (apenas retirada na loja)</p>
-                <p>Vale-refeição (consulte bandeiras)</p>
-            </div>
-            <div>
-                <h3>Entrega</h3>
-                <p>Entregamos em toda a região metropolitana</p>
-                <p>Horário: 9h às 18h (de terça a sábado)</p>
-                <p>Taxa de entrega: R$ 10,00 (grátis para pedidos acima de R$ 80,00)</p>
-                <p>Retirada na loja: Sem custo adicional</p>
-                <p>Encomendas especiais: 48h de antecedência</p>
+                <div>
+                    <h3>Pagamento</h3>
+                    <p>Cartão de crédito (até 12x)</p>
+                    <p>Cartão de débito</p>
+                    <p>Pix (5% de desconto)</p>
+                    <p>Dinheiro (apenas retirada na loja)</p>
+                    <p>Vale-refeição (consulte bandeiras)</p>
+                </div>
+                <div>
+                    <h3>Entrega</h3>
+                    <p>Entregamos em toda a região metropolitana</p>
+                    <p>Horário: 9h às 18h (de terça a sábado)</p>
+                    <p>Taxa de entrega: R$ 10,00 (grátis para pedidos acima de R$ 80,00)</p>
+                    <p>Retirada na loja: Sem custo adicional</p>
+                    <p>Encomendas especiais: 48h de antecedência</p>
+                </div>
             </div>
         </section>
         <!-- Entre em Contato -->
-        <section id="contato">
+        <section id="contato" class="secao">
             <h2>Entre em Contato</h2>
-            <p>Endereço: Rua dos Sabores, 123 - Centro</p>
-            <p>Telefone: (61) 1234-5678</p>
-            <p>WhatsApp: (61) 98765-4321</p>
-            <p>Email: contato@cupcakestore.com.br</p>
-            <p>Horário: Terça a Domingo, das 9h às 19h</p>
+            <p><strong>Endereço:</strong> Rua dos Sabores, 123 - Centro</p>
+            <p><strong>Telefone:</strong> (61) 1234-5678</p>
+            <p><strong>WhatsApp:</strong> (61) 98765-4321</p>
+            <p><strong>Email:</strong> contato@cupcakestore.com.br</p>
+            <p><strong>Horário:</strong> Terça a Domingo, das 9h às 19h</p>
         </section>
     </main>
     <hr>
     <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
-        <p>Siga-nos nas redes sociais: @cupcakestore</p>
-        <p>Desenvolvido com ❤️ e muito açúcar</p>
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
+            <p>Siga-nos nas redes sociais: @cupcakestore</p>
+            <p>Desenvolvido com ❤️ e muito açúcar</p>
+        </div>
     </footer>
 </body>
 
