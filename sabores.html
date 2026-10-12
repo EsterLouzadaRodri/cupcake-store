@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -69,6 +70,22 @@
             <div id="produtosGrade" class="product-grid">
                 <!-- Os cupcakes serão inseridos aqui via JavaScript -->
             </div>
+
+            <button onclick="abrirModal();">Abrir modal</button>
+
+            <!--MODAL-->
+            <div id="modal" class="modal">
+                <div class="modal-conteudo">
+                    <div class="modal-cabecalho">
+                        <h3 class="modal-titulo">Informações do cupcake</h3>
+                        <button class="botao-fechar" onclick="fecharModal();">&times;</button>
+                    </div>
+                    <div class="modal-corpo">
+                        <p>Carregando informações...</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <hr>
@@ -78,6 +95,11 @@
         <p>Desenvolvido com ❤️ e muito açúcar</p>
     </footer>
 
+    <!--lista de cupcakes-->
+    <script src="js/cupcakes.js"></script>
+    <!--incorpora arquivo js de modal-->
+    <script src="js/modal.js"></script>
+    <!--arquivo js listagem de produtos-->
     <script src="js/listagem-produtos.js"></script>
 </body>
 
