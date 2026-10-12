@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CupcakeStore - Login de Acesso</title>
+    <title>Login - CupcakeStore</title>
     <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!--link fonte google-->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <header id="cabecalho">
-        <!-- Logomarca e Slogan -->
         <div id="marca">
-            <img id="marcaImagem" class="borda-redonda sombra" src="img/cupcakestore-logo.svg" alt="cupcakestore-logo.svg" width="128px">
+            <img id="marcaImagem" src="img/cupcakestore-logo.svg" width="128px" alt="">
             <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
         </div>
         <!-- Navegação Global -->
-        <nav id="navegacaoGlobal" class="fundo-escuro sombra">
+        <nav id="navegacaoGlobal">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sabores.html">Nossos Sabores</a></li>
@@ -26,39 +27,34 @@
             </ul>
         </nav>
     </header>
-
     <hr>
-
-    <main class="container">
+    <main class="conteiner">
         <h1>Login de Acesso</h1>
-
         <form id="formularioLogin" class="formulario sombra" action="" method="post">
             <div>
                 <div class="formulario-campo">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name = "email" required>
+                    <input id="email" name="email" type="email" required>
                 </div>
                 <div class="formulario-campo">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" required>
+                    <input id="senha" name="senha" type="password" required>
                 </div>
             </div>
             <div>
-                <div >
-                    <button class="botao-primario" type="submit">Enviar</button>
-                    <p>Ainda não possui cadastro? </p>
-                    <p><a href="cadastro.html">Cadastre-se!</a></p>
-                </div>
+                <button class="botao-primario" type="submit">Enviar</button>
+                <p>Ainda não possui cadastro? <a href="cadastro.html">Cadastre-se</a></p>
+                
             </div>
         </form>
+
     </main>
-
     <hr>
-
     <footer id="rodape">
         <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
         <p>Siga-nos nas redes sociais: @cupcakestore</p>
-        <p>Desenvolvido com ❤️ e muito açucar</p>
+        <p>Desenvolvido com ❤️ e muito açúcar</p>
     </footer>
 </body>
+
 </html>

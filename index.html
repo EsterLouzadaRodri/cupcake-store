@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!--site: https://cupcakestore.kesug.com/
-    para atualizar: ctrl + f5-->
-
 <head>
     <!-- Raiz do site ou subdomínio -->
     <meta charset="UTF-8">
@@ -11,8 +8,7 @@
     <title>CupcakeStore - Delícias em Miniatura</title>
     <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <!--link fonte google-->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,12 +16,14 @@
     <header id="cabecalho">
         <!-- Logomarca e Slogan -->
         <div id="marca">
-            <img id="marcaImagem" class="borda-redonda sombra" src="img/cupcakestore-logo.svg" alt="cupcakestore-logo.svg" width="128px">
-            <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
+            <div class="conteiner">
+                <img id="marcaImagem" src="img/cupcakestore-logo.svg" alt="cupcakestore-logo.svg" width="128px">
+                <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
+            </div>
         </div>
         <!-- Navegação Global -->
         <nav id="navegacaoGlobal" class="fundo-escuro sombra">
-            <ul>
+            <ul class="conteiner">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sabores.html">Nossos Sabores</a></li>
                 <li><a href="login.html">Login/Cadastro</a></li>
@@ -70,19 +68,19 @@
             <h2>Nossa Equipe</h2>
             <div>
                 <div class="caixa">
-                    <img class="borda-redonda sombra" src="img/equipe-ana-paula.jpg" alt="equipe-ana-paula.jpg" width="280px">
+                    <img class="borda-circulo sombra" src="img/equipe-ana-paula.jpg" alt="equipe-ana-paula.jpg" width="280px">
                     <h3>Ana Paula - Chef Confeiteira</h3>
                     <p>Formada em Gastronomia com especialização em Confeitaria, Ana é a mente criativa por trás dos nossos
                         sabores exclusivos.</p>
                 </div>
                 <div class="caixa">
-                    <img class="borda-redonda sombra" src="img/equipe-carlos-mendes.jpg" alt="equipe-carlos-mendes.jpg" width="280px">
+                    <img class="borda-circulo sombra" src="img/equipe-carlos-mendes.jpg" alt="equipe-carlos-mendes.jpg" width="280px">
                     <h3>Carlos Mendes - Padeiro Mestre</h3>
                     <p>Com mais de 15 anos de experiência, Carlos garante que todas as nossas massas tenham a textura
                         perfeita.</p>
                 </div>
                 <div class="caixa">
-                    <img class="borda-redonda sombra" src="img/equipe-juliana-santos.jpg" alt="equipe-juliana-santos.jpg" width="280px">
+                    <img class="borda-circulo sombra" src="img/equipe-juliana-santos.jpg" alt="equipe-juliana-santos.jpg" width="280px">
                     <h3>Juliana Santos - Decoradora</h3>
                     <p>Nossa artista que transforma cupcakes em pequenas obras de arte com suas técnicas incríveis de
                         decoração.</p>
@@ -170,11 +168,9 @@
     <hr>
     <!-- Rodapé -->
     <footer id="rodape">
-        <div class="container">
-            <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
-            <p>Siga-nos nas redes sociais: @cupcakestore</p>
-            <p>Desenvolvido com ❤️ e muito açúcar</p>
-        </div>
+        <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
+        <p>Siga-nos nas redes sociais: @cupcakestore</p>
+        <p>Desenvolvido com ❤️ e muito açúcar</p>
     </footer>
 </body>
 
